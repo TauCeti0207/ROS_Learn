@@ -14,7 +14,6 @@
         <!-- 启动乌龟GUI节点 -->
         <node pkg="turtlesim" type="turtlesim_node" name="my_turtle2" output="screen" />
         <!-- 启动键盘控制节点 -->
-        <!--  -->
         <node pkg="turtlesim" type="turtle_teleop_key" name="my_key2" output="screen" />
     </group>
 </launch>
