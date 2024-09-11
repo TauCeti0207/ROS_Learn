@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -g -DNDEBUG  -shared -Wl,-soname,libuse_hello2.so -o /home/yzq0207/catkin_ws/devel/lib/libuse_hello2.so CMakeFiles/use_hello2.dir/src/demo_hello2.cpp.o 

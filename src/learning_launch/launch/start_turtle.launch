@@ -1,0 +1,10 @@
+<!-- 启动乌龟GUI与键盘控制节点 -->
+<launch>
+    <!-- 乌龟GUI -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen">
+        <remap from="turtle1/cmd_vel" to="/cmd_vel" />
+    </node>
+	<!-- respawn="true" 节点关闭后自动重启 -->
+    <!-- 键盘控制 -->
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key" output="screen"/>
+</launch>

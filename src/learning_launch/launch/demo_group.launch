@@ -1,0 +1,19 @@
+<launch>
+    <!-- 启动两对乌龟GUI与键盘控制节点 -->
+
+    <!-- 第一对乌龟GUI和键盘控制节点 -->
+   <group ns="first">
+        <!-- 启动乌龟GUI节点 -->
+        <node pkg="turtlesim" type="turtlesim_node" name="my_turtle1" output="screen" />
+        <!-- 启动键盘控制节点 -->
+        <node pkg="turtlesim" type="turtle_teleop_key" name="my_key1" output="screen" />
+    </group>
+
+    <!-- 第二对乌龟GUI和键盘控制节点 -->
+   <group ns="second">
+        <!-- 启动乌龟GUI节点 -->
+        <node pkg="turtlesim" type="turtlesim_node" name="my_turtle2" output="screen" />
+        <!-- 启动键盘控制节点 -->
+        <node pkg="turtlesim" type="turtle_teleop_key" name="my_key2" output="screen" />
+    </group>
+</launch>
