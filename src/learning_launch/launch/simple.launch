@@ -1,5 +1,4 @@
 <launch>
-    <node pkg="learning_communication" type="person_subscriber" name="talker" />
-    <node pkg="learning_communication" type="person_publisher" name="listener" /> 
+	<node pkg="learning_communication" type="person_subscriber" name="talker" output="screen" />
+	<node pkg="learning_communication" type="person_publisher" name="listener" output="screen" />
 </launch>
-

@@ -183,21 +183,6 @@ demo_AddTwoNum_client/fast:
 .PHONY : demo_AddTwoNum_client/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/person_server.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_server.dir/rule
-.PHONY : learning_communication/CMakeFiles/person_server.dir/rule
-
-# Convenience name for target.
-person_server: learning_communication/CMakeFiles/person_server.dir/rule
-
-.PHONY : person_server
-
-# fast build rule for target.
-person_server/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_server.dir/build.make learning_communication/CMakeFiles/person_server.dir/build
-.PHONY : person_server/fast
-
-# Convenience name for target.
 learning_communication/CMakeFiles/demo_hello.dir/rule:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_hello.dir/rule
 .PHONY : learning_communication/CMakeFiles/demo_hello.dir/rule
@@ -213,49 +198,19 @@ demo_hello/fast:
 .PHONY : demo_hello/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
-.PHONY : learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
+learning_communication/CMakeFiles/demo_getParam.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_getParam.dir/rule
+.PHONY : learning_communication/CMakeFiles/demo_getParam.dir/rule
 
 # Convenience name for target.
-demo_AddTwoNum_server: learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
+demo_getParam: learning_communication/CMakeFiles/demo_getParam.dir/rule
 
-.PHONY : demo_AddTwoNum_server
+.PHONY : demo_getParam
 
 # fast build rule for target.
-demo_AddTwoNum_server/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/build.make learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/build
-.PHONY : demo_AddTwoNum_server/fast
-
-# Convenience name for target.
-learning_communication/CMakeFiles/string_client.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/string_client.dir/rule
-.PHONY : learning_communication/CMakeFiles/string_client.dir/rule
-
-# Convenience name for target.
-string_client: learning_communication/CMakeFiles/string_client.dir/rule
-
-.PHONY : string_client
-
-# fast build rule for target.
-string_client/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_client.dir/build.make learning_communication/CMakeFiles/string_client.dir/build
-.PHONY : string_client/fast
-
-# Convenience name for target.
-learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
-.PHONY : learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
-
-# Convenience name for target.
-demo_set_turtle_background_color: learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
-
-.PHONY : demo_set_turtle_background_color
-
-# fast build rule for target.
-demo_set_turtle_background_color/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/build.make learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/build
-.PHONY : demo_set_turtle_background_color/fast
+demo_getParam/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_getParam.dir/build.make learning_communication/CMakeFiles/demo_getParam.dir/build
+.PHONY : demo_getParam/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/person_client.dir/rule:
@@ -273,19 +228,64 @@ person_client/fast:
 .PHONY : person_client/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/demo_getParam.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_getParam.dir/rule
-.PHONY : learning_communication/CMakeFiles/demo_getParam.dir/rule
+learning_communication/CMakeFiles/person_server.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_server.dir/rule
+.PHONY : learning_communication/CMakeFiles/person_server.dir/rule
 
 # Convenience name for target.
-demo_getParam: learning_communication/CMakeFiles/demo_getParam.dir/rule
+person_server: learning_communication/CMakeFiles/person_server.dir/rule
 
-.PHONY : demo_getParam
+.PHONY : person_server
 
 # fast build rule for target.
-demo_getParam/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_getParam.dir/build.make learning_communication/CMakeFiles/demo_getParam.dir/build
-.PHONY : demo_getParam/fast
+person_server/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_server.dir/build.make learning_communication/CMakeFiles/person_server.dir/build
+.PHONY : person_server/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
+.PHONY : learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
+
+# Convenience name for target.
+demo_AddTwoNum_server: learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/rule
+
+.PHONY : demo_AddTwoNum_server
+
+# fast build rule for target.
+demo_AddTwoNum_server/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/build.make learning_communication/CMakeFiles/demo_AddTwoNum_server.dir/build
+.PHONY : demo_AddTwoNum_server/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
+.PHONY : learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
+
+# Convenience name for target.
+demo_set_turtle_background_color: learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/rule
+
+.PHONY : demo_set_turtle_background_color
+
+# fast build rule for target.
+demo_set_turtle_background_color/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/build.make learning_communication/CMakeFiles/demo_set_turtle_background_color.dir/build
+.PHONY : demo_set_turtle_background_color/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/string_client.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/string_client.dir/rule
+.PHONY : learning_communication/CMakeFiles/string_client.dir/rule
+
+# Convenience name for target.
+string_client: learning_communication/CMakeFiles/string_client.dir/rule
+
+.PHONY : string_client
+
+# fast build rule for target.
+string_client/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_client.dir/build.make learning_communication/CMakeFiles/string_client.dir/build
+.PHONY : string_client/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/turtlesim_generate_messages_py.dir/rule:
@@ -408,21 +408,6 @@ learning_communication_generate_messages_cpp/fast:
 .PHONY : learning_communication_generate_messages_cpp/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/person_publisher.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_publisher.dir/rule
-.PHONY : learning_communication/CMakeFiles/person_publisher.dir/rule
-
-# Convenience name for target.
-person_publisher: learning_communication/CMakeFiles/person_publisher.dir/rule
-
-.PHONY : person_publisher
-
-# fast build rule for target.
-person_publisher/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_publisher.dir/build.make learning_communication/CMakeFiles/person_publisher.dir/build
-.PHONY : person_publisher/fast
-
-# Convenience name for target.
 learning_communication/CMakeFiles/string_subscriber.dir/rule:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/string_subscriber.dir/rule
 .PHONY : learning_communication/CMakeFiles/string_subscriber.dir/rule
@@ -436,6 +421,21 @@ string_subscriber: learning_communication/CMakeFiles/string_subscriber.dir/rule
 string_subscriber/fast:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_subscriber.dir/build.make learning_communication/CMakeFiles/string_subscriber.dir/build
 .PHONY : string_subscriber/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/person_publisher.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_publisher.dir/rule
+.PHONY : learning_communication/CMakeFiles/person_publisher.dir/rule
+
+# Convenience name for target.
+person_publisher: learning_communication/CMakeFiles/person_publisher.dir/rule
+
+.PHONY : person_publisher
+
+# fast build rule for target.
+person_publisher/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_publisher.dir/build.make learning_communication/CMakeFiles/person_publisher.dir/build
+.PHONY : person_publisher/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
@@ -481,6 +481,21 @@ turtlesim_generate_messages_nodejs: learning_communication/CMakeFiles/turtlesim_
 turtlesim_generate_messages_nodejs/fast:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build
 .PHONY : turtlesim_generate_messages_nodejs/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/string_server.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/string_server.dir/rule
+.PHONY : learning_communication/CMakeFiles/string_server.dir/rule
+
+# Convenience name for target.
+string_server: learning_communication/CMakeFiles/string_server.dir/rule
+
+.PHONY : string_server
+
+# fast build rule for target.
+string_server/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_server.dir/build.make learning_communication/CMakeFiles/string_server.dir/build
+.PHONY : string_server/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule:
@@ -708,34 +723,34 @@ learning_communication_generate_messages_lisp/fast:
 .PHONY : learning_communication_generate_messages_lisp/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+learning_communication/CMakeFiles/demo_setParam.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_setParam.dir/rule
+.PHONY : learning_communication/CMakeFiles/demo_setParam.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_nodejs: learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+demo_setParam: learning_communication/CMakeFiles/demo_setParam.dir/rule
 
-.PHONY : std_srvs_generate_messages_nodejs
+.PHONY : demo_setParam
 
 # fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
+demo_setParam/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_setParam.dir/build.make learning_communication/CMakeFiles/demo_setParam.dir/build
+.PHONY : demo_setParam/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/person_subscriber.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_subscriber.dir/rule
-.PHONY : learning_communication/CMakeFiles/person_subscriber.dir/rule
+learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
+.PHONY : learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
 
 # Convenience name for target.
-person_subscriber: learning_communication/CMakeFiles/person_subscriber.dir/rule
+learning_communication_genlisp: learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
 
-.PHONY : person_subscriber
+.PHONY : learning_communication_genlisp
 
 # fast build rule for target.
-person_subscriber/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_subscriber.dir/build.make learning_communication/CMakeFiles/person_subscriber.dir/build
-.PHONY : person_subscriber/fast
+learning_communication_genlisp/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_genlisp.dir/build.make learning_communication/CMakeFiles/learning_communication_genlisp.dir/build
+.PHONY : learning_communication_genlisp/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
@@ -768,34 +783,34 @@ string_publisher/fast:
 .PHONY : string_publisher/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
-.PHONY : learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
+learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-learning_communication_genlisp: learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
+std_srvs_generate_messages_nodejs: learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
-.PHONY : learning_communication_genlisp
+.PHONY : std_srvs_generate_messages_nodejs
 
 # fast build rule for target.
-learning_communication_genlisp/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_genlisp.dir/build.make learning_communication/CMakeFiles/learning_communication_genlisp.dir/build
-.PHONY : learning_communication_genlisp/fast
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-learning_communication/CMakeFiles/demo_setParam.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/demo_setParam.dir/rule
-.PHONY : learning_communication/CMakeFiles/demo_setParam.dir/rule
+learning_communication/CMakeFiles/person_subscriber.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/person_subscriber.dir/rule
+.PHONY : learning_communication/CMakeFiles/person_subscriber.dir/rule
 
 # Convenience name for target.
-demo_setParam: learning_communication/CMakeFiles/demo_setParam.dir/rule
+person_subscriber: learning_communication/CMakeFiles/person_subscriber.dir/rule
 
-.PHONY : demo_setParam
+.PHONY : person_subscriber
 
 # fast build rule for target.
-demo_setParam/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/demo_setParam.dir/build.make learning_communication/CMakeFiles/demo_setParam.dir/build
-.PHONY : demo_setParam/fast
+person_subscriber/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/person_subscriber.dir/build.make learning_communication/CMakeFiles/person_subscriber.dir/build
+.PHONY : person_subscriber/fast
 
 src/demo_AddTwoNum_client.o: src/demo_AddTwoNum_client.cpp.o
 
@@ -1256,6 +1271,33 @@ src/string_publisher.cpp.s:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_publisher.dir/build.make learning_communication/CMakeFiles/string_publisher.dir/src/string_publisher.cpp.s
 .PHONY : src/string_publisher.cpp.s
 
+src/string_server.o: src/string_server.cpp.o
+
+.PHONY : src/string_server.o
+
+# target to build an object file
+src/string_server.cpp.o:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_server.dir/build.make learning_communication/CMakeFiles/string_server.dir/src/string_server.cpp.o
+.PHONY : src/string_server.cpp.o
+
+src/string_server.i: src/string_server.cpp.i
+
+.PHONY : src/string_server.i
+
+# target to preprocess a source file
+src/string_server.cpp.i:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_server.dir/build.make learning_communication/CMakeFiles/string_server.dir/src/string_server.cpp.i
+.PHONY : src/string_server.cpp.i
+
+src/string_server.s: src/string_server.cpp.s
+
+.PHONY : src/string_server.s
+
+# target to generate assembly for a file
+src/string_server.cpp.s:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/string_server.dir/build.make learning_communication/CMakeFiles/string_server.dir/src/string_server.cpp.s
+.PHONY : src/string_server.cpp.s
+
 src/string_subscriber.o: src/string_subscriber.cpp.o
 
 .PHONY : src/string_subscriber.o
@@ -1294,13 +1336,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... demo_AddTwoNum_client"
-	@echo "... person_server"
 	@echo "... demo_hello"
-	@echo "... demo_AddTwoNum_server"
-	@echo "... string_client"
-	@echo "... demo_set_turtle_background_color"
-	@echo "... person_client"
 	@echo "... demo_getParam"
+	@echo "... person_client"
+	@echo "... person_server"
+	@echo "... demo_AddTwoNum_server"
+	@echo "... demo_set_turtle_background_color"
+	@echo "... string_client"
 	@echo "... turtlesim_generate_messages_py"
 	@echo "... _learning_communication_generate_messages_check_deps_PersonMsg"
 	@echo "... learning_communication_generate_messages_nodejs"
@@ -1310,12 +1352,13 @@ help:
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... demo_set_time"
 	@echo "... learning_communication_generate_messages_cpp"
-	@echo "... person_publisher"
 	@echo "... string_subscriber"
+	@echo "... person_publisher"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... test"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtlesim_generate_messages_nodejs"
+	@echo "... string_server"
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... install/strip"
 	@echo "... learning_communication_genpy"
@@ -1332,12 +1375,12 @@ help:
 	@echo "... learning_communication_generate_messages_py"
 	@echo "... learning_communication_generate_messages_eus"
 	@echo "... learning_communication_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... person_subscriber"
+	@echo "... demo_setParam"
+	@echo "... learning_communication_genlisp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... string_publisher"
-	@echo "... learning_communication_genlisp"
-	@echo "... demo_setParam"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... person_subscriber"
 	@echo "... src/demo_AddTwoNum_client.o"
 	@echo "... src/demo_AddTwoNum_client.i"
 	@echo "... src/demo_AddTwoNum_client.s"
@@ -1389,6 +1432,9 @@ help:
 	@echo "... src/string_publisher.o"
 	@echo "... src/string_publisher.i"
 	@echo "... src/string_publisher.s"
+	@echo "... src/string_server.o"
+	@echo "... src/string_server.i"
+	@echo "... src/string_server.s"
 	@echo "... src/string_subscriber.o"
 	@echo "... src/string_subscriber.i"
 	@echo "... src/string_subscriber.s"

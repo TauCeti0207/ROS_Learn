@@ -25,7 +25,6 @@ int main(int argc, char *argv[])
 	// 3.创建 TF 订阅节点
 	tf2_ros::Buffer buffer;
 	tf2_ros::TransformListener listener(buffer);
-
 	ros::Rate r(1);
 	while (ros::ok())
 	{

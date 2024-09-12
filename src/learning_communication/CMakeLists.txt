@@ -177,7 +177,11 @@ include
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
+add_executable(string_publisher src/string_publisher.cpp)
+target_link_libraries(string_publisher ${catkin_LIBRARIES})
 
+add_executable(string_subscriber src/string_subscriber.cpp)
+target_link_libraries(string_subscriber ${catkin_LIBRARIES})
 
 
 add_executable(person_publisher src/person_publisher.cpp)
@@ -188,11 +192,19 @@ add_executable(person_subscriber src/person_subscriber.cpp)
 target_link_libraries(person_subscriber ${catkin_LIBRARIES})
 add_dependencies(person_subscriber ${PROJECT_NAME}_gencpp)
 
-add_executable(string_publisher src/string_publisher.cpp)
-target_link_libraries(string_publisher ${catkin_LIBRARIES})
+add_executable(string_server src/string_server.cpp)
+target_link_libraries(string_server ${catkin_LIBRARIES})
 
-add_executable(string_subscriber src/string_subscriber.cpp)
-target_link_libraries(string_subscriber ${catkin_LIBRARIES})
+add_executable(string_client src/string_client.cpp)
+target_link_libraries(string_client ${catkin_LIBRARIES})
+
+add_executable(person_server src/person_server.cpp)
+target_link_libraries(person_server ${catkin_LIBRARIES})
+add_dependencies(person_server ${PROJECT_NAME}_gencpp)
+
+add_executable(person_client src/person_client.cpp)
+target_link_libraries(person_client ${catkin_LIBRARIES})
+add_dependencies(person_client ${PROJECT_NAME}_gencpp)
 
 
 add_executable(demo_setParam src/demo_setParam.cpp)
@@ -226,18 +238,7 @@ add_executable(demo_hello src/demo_hello.cpp)
 target_link_libraries(demo_hello ${catkin_LIBRARIES})
 
 
-add_executable(string_client src/string_client.cpp)
-target_link_libraries(string_client ${catkin_LIBRARIES})
 
-
-
-add_executable(person_server src/person_server.cpp)
-target_link_libraries(person_server ${catkin_LIBRARIES})
-add_dependencies(person_server ${PROJECT_NAME}_gencpp)
-
-add_executable(person_client src/person_client.cpp)
-target_link_libraries(person_client ${catkin_LIBRARIES})
-add_dependencies(person_client ${PROJECT_NAME}_gencpp)
 
 
 add_executable(demo_AddTwoNum_server src/demo_AddTwoNum_server.cpp)
@@ -265,6 +266,10 @@ add_dependencies(demo_AddTwoNum_client ${PROJECT_NAME}_gencpp)
 #   scripts/my_python_script
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
+install(PROGRAMS
+  scripts/string_publisher.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_node
