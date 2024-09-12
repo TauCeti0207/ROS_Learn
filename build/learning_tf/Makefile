@@ -113,17 +113,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -134,6 +123,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -226,6 +226,21 @@ sensor_msgs_generate_messages_py: learning_tf/CMakeFiles/sensor_msgs_generate_me
 sensor_msgs_generate_messages_py/fast:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make learning_tf/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 learning_tf/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
@@ -378,6 +393,21 @@ actionlib_msgs_generate_messages_nodejs/fast:
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+learning_tf/CMakeFiles/demo01_static_pub.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/demo01_static_pub.dir/rule
+.PHONY : learning_tf/CMakeFiles/demo01_static_pub.dir/rule
+
+# Convenience name for target.
+demo01_static_pub: learning_tf/CMakeFiles/demo01_static_pub.dir/rule
+
+.PHONY : demo01_static_pub
+
+# fast build rule for target.
+demo01_static_pub/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo01_static_pub.dir/build.make learning_tf/CMakeFiles/demo01_static_pub.dir/build
+.PHONY : demo01_static_pub/fast
+
+# Convenience name for target.
 learning_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : learning_tf/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
@@ -421,6 +451,21 @@ actionlib_msgs_generate_messages_cpp: learning_tf/CMakeFiles/actionlib_msgs_gene
 actionlib_msgs_generate_messages_cpp/fast:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make learning_tf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+learning_tf/CMakeFiles/demo02_static_sub.dir/rule:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/demo02_static_sub.dir/rule
+.PHONY : learning_tf/CMakeFiles/demo02_static_sub.dir/rule
+
+# Convenience name for target.
+demo02_static_sub: learning_tf/CMakeFiles/demo02_static_sub.dir/rule
+
+.PHONY : demo02_static_sub
+
+# fast build rule for target.
+demo02_static_sub/fast:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo02_static_sub.dir/build.make learning_tf/CMakeFiles/demo02_static_sub.dir/build
+.PHONY : demo02_static_sub/fast
 
 # Convenience name for target.
 learning_tf/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
@@ -557,20 +602,59 @@ turtle_tf_broadcaster/fast:
 	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build
 .PHONY : turtle_tf_broadcaster/fast
 
-# Convenience name for target.
-learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+src/demo01_static_pub.o: src/demo01_static_pub.cpp.o
 
-# Convenience name for target.
-tf_generate_messages_lisp: learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : src/demo01_static_pub.o
 
-.PHONY : tf_generate_messages_lisp
+# target to build an object file
+src/demo01_static_pub.cpp.o:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo01_static_pub.dir/build.make learning_tf/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.o
+.PHONY : src/demo01_static_pub.cpp.o
 
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
+src/demo01_static_pub.i: src/demo01_static_pub.cpp.i
+
+.PHONY : src/demo01_static_pub.i
+
+# target to preprocess a source file
+src/demo01_static_pub.cpp.i:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo01_static_pub.dir/build.make learning_tf/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.i
+.PHONY : src/demo01_static_pub.cpp.i
+
+src/demo01_static_pub.s: src/demo01_static_pub.cpp.s
+
+.PHONY : src/demo01_static_pub.s
+
+# target to generate assembly for a file
+src/demo01_static_pub.cpp.s:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo01_static_pub.dir/build.make learning_tf/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.s
+.PHONY : src/demo01_static_pub.cpp.s
+
+src/demo02_static_sub.o: src/demo02_static_sub.cpp.o
+
+.PHONY : src/demo02_static_sub.o
+
+# target to build an object file
+src/demo02_static_sub.cpp.o:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo02_static_sub.dir/build.make learning_tf/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.o
+.PHONY : src/demo02_static_sub.cpp.o
+
+src/demo02_static_sub.i: src/demo02_static_sub.cpp.i
+
+.PHONY : src/demo02_static_sub.i
+
+# target to preprocess a source file
+src/demo02_static_sub.cpp.i:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo02_static_sub.dir/build.make learning_tf/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.i
+.PHONY : src/demo02_static_sub.cpp.i
+
+src/demo02_static_sub.s: src/demo02_static_sub.cpp.s
+
+.PHONY : src/demo02_static_sub.s
+
+# target to generate assembly for a file
+src/demo02_static_sub.cpp.s:
+	cd /home/yzq0207/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/demo02_static_sub.dir/build.make learning_tf/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.s
+.PHONY : src/demo02_static_sub.cpp.s
 
 src/turtle_tf_broadcaster.o: src/turtle_tf_broadcaster.cpp.o
 
@@ -641,6 +725,8 @@ help:
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... edit_cache"
+	@echo "... tf_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -651,11 +737,13 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... demo01_static_pub"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... test"
+	@echo "... demo02_static_sub"
+	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf_generate_messages_eus"
@@ -664,8 +752,12 @@ help:
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... turtle_tf_broadcaster"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... edit_cache"
+	@echo "... src/demo01_static_pub.o"
+	@echo "... src/demo01_static_pub.i"
+	@echo "... src/demo01_static_pub.s"
+	@echo "... src/demo02_static_sub.o"
+	@echo "... src/demo02_static_sub.i"
+	@echo "... src/demo02_static_sub.s"
 	@echo "... src/turtle_tf_broadcaster.o"
 	@echo "... src/turtle_tf_broadcaster.i"
 	@echo "... src/turtle_tf_broadcaster.s"

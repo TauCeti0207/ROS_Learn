@@ -1156,6 +1156,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1286,6 +1299,19 @@ actionlib_msgs_generate_messages_nodejs/fast:
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named demo01_static_pub
+
+# Build rule for target.
+demo01_static_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo01_static_pub
+.PHONY : demo01_static_pub
+
+# fast build rule for target.
+demo01_static_pub/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/demo01_static_pub.dir/build.make learning_tf/CMakeFiles/demo01_static_pub.dir/build
+.PHONY : demo01_static_pub/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_nodejs
 
 # Build rule for target.
@@ -1323,6 +1349,19 @@ actionlib_msgs_generate_messages_cpp: cmake_check_build_system
 actionlib_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f learning_tf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make learning_tf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named demo02_static_sub
+
+# Build rule for target.
+demo02_static_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_static_sub
+.PHONY : demo02_static_sub
+
+# fast build rule for target.
+demo02_static_sub/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/demo02_static_sub.dir/build.make learning_tf/CMakeFiles/demo02_static_sub.dir/build
+.PHONY : demo02_static_sub/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_lisp
@@ -1440,19 +1479,6 @@ turtle_tf_broadcaster: cmake_check_build_system
 turtle_tf_broadcaster/fast:
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build
 .PHONY : turtle_tf_broadcaster/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_nodejs
@@ -2258,6 +2284,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
@@ -2268,9 +2295,11 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... demo01_static_pub"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... demo02_static_sub"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
@@ -2280,7 +2309,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... turtle_tf_broadcaster"
-	@echo "... tf_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_gencfg"

@@ -151,6 +151,13 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+add_executable(demo01_static_pub src/demo01_static_pub.cpp)
+target_link_libraries(demo01_static_pub ${catkin_LIBRARIES})
+
+
+add_executable(demo02_static_sub src/demo02_static_sub.cpp)
+target_link_libraries(demo02_static_sub ${catkin_LIBRARIES})
+
 add_executable(turtle_tf_broadcaster src/turtle_tf_broadcaster.cpp)
 target_link_libraries(turtle_tf_broadcaster ${catkin_LIBRARIES})
 
