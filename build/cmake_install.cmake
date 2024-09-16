@@ -136,6 +136,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yzq0207/catkin_ws/build/learning_communication/cmake_install.cmake")
   include("/home/yzq0207/catkin_ws/build/learning_tf/cmake_install.cmake")
   include("/home/yzq0207/catkin_ws/build/mbot_gazebo/cmake_install.cmake")
+  include("/home/yzq0207/catkin_ws/build/learning_urdf_rviz_gazebo/cmake_install.cmake")
   include("/home/yzq0207/catkin_ws/build/mbot_description/cmake_install.cmake")
 
 endif()

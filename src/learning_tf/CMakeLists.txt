@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   tf
   turtlesim
+  rosbag
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES learning_tf
-#  CATKIN_DEPENDS roscpp rospy tf turtlesim
+ CATKIN_DEPENDS roscpp rospy tf turtlesim rosbag
 #  DEPENDS system_lib
 )
 
@@ -157,6 +158,30 @@ target_link_libraries(demo01_static_pub ${catkin_LIBRARIES})
 
 add_executable(demo02_static_sub src/demo02_static_sub.cpp)
 target_link_libraries(demo02_static_sub ${catkin_LIBRARIES})
+
+add_executable(demo03_dynamic_pub src/demo03_dynamic_pub.cpp)
+target_link_libraries(demo03_dynamic_pub ${catkin_LIBRARIES})
+
+add_executable(demo04_dynamic_sub src/demo04_dynamic_sub.cpp)
+target_link_libraries(demo04_dynamic_sub ${catkin_LIBRARIES})
+
+add_executable(demo05_tfs_sub src/demo05_tfs_sub.cpp)
+target_link_libraries(demo05_tfs_sub ${catkin_LIBRARIES})
+
+add_executable(demo06_new_turtle src/demo06_new_turtle.cpp)
+target_link_libraries(demo06_new_turtle ${catkin_LIBRARIES})
+
+add_executable(demo07_turtle_pub src/demo07_turtle_pub.cpp)
+target_link_libraries(demo07_turtle_pub ${catkin_LIBRARIES})
+
+add_executable(demo08_turtle_sub src/demo08_turtle_sub.cpp)
+target_link_libraries(demo08_turtle_sub ${catkin_LIBRARIES})
+
+add_executable(demo09_write_rosbag src/demo09_write_rosbag.cpp)
+target_link_libraries(demo09_write_rosbag ${catkin_LIBRARIES})
+
+add_executable(demo10_read_rosbag src/demo10_read_rosbag.cpp)
+target_link_libraries(demo10_read_rosbag ${catkin_LIBRARIES})
 
 add_executable(turtle_tf_broadcaster src/turtle_tf_broadcaster.cpp)
 target_link_libraries(turtle_tf_broadcaster ${catkin_LIBRARIES})

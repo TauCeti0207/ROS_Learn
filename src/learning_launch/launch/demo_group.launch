@@ -3,6 +3,7 @@
 
     <!-- 第一对乌龟GUI和键盘控制节点 -->
    <group ns="first">
+   
         <!-- 启动乌龟GUI节点 -->
         <node pkg="turtlesim" type="turtlesim_node" name="my_turtle1" output="screen" />
         <!-- 启动键盘控制节点 -->

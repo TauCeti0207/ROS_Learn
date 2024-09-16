@@ -7,12 +7,12 @@
 #include <geometry_msgs/Twist.h>
 #include <turtlesim/Spawn.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
 	// 初始化ROS节点
 	ros::init(argc, argv, "my_tf_listener");
 
-    // 创建节点句柄
+	// 创建节点句柄
 	ros::NodeHandle node;
 
 	// 请求产生turtle2
@@ -34,12 +34,12 @@ int main(int argc, char** argv)
 		tf::StampedTransform transform;
 		try
 		{
-			listener.waitForTransform("/turtle2", "/turtle1", ros::Time(0), ros::Duration(3.0));
+			listener.waitForTransform("/turtle2", "/turtle1", ros::Time(0), ros::Duration(3.0)); // 超时时间3s
 			listener.lookupTransform("/turtle2", "/turtle1", ros::Time(0), transform);
 		}
-		catch (tf::TransformException &ex) 
+		catch (tf::TransformException &ex)
 		{
-			ROS_ERROR("%s",ex.what());
+			ROS_ERROR("%s", ex.what());
 			ros::Duration(1.0).sleep();
 			continue;
 		}
@@ -47,9 +47,9 @@ int main(int argc, char** argv)
 		// 根据turtle1与turtle2坐标系之间的位置关系，发布turtle2的速度控制指令
 		geometry_msgs::Twist vel_msg;
 		vel_msg.angular.z = 4.0 * atan2(transform.getOrigin().y(),
-				                        transform.getOrigin().x());
+										transform.getOrigin().x());
 		vel_msg.linear.x = 0.5 * sqrt(pow(transform.getOrigin().x(), 2) +
-				                      pow(transform.getOrigin().y(), 2));
+									  pow(transform.getOrigin().y(), 2));
 		turtle_vel.publish(vel_msg);
 
 		rate.sleep();

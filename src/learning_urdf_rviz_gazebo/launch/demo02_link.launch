@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- 设置参数 在参数服务器载入urdf文件-->
+    <param name="robot_description" textfile="$(find learning_urdf_rviz_gazebo)/urdf/urdf/demo02_link.urdf" />
+
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find learning_urdf_rviz_gazebo)/config/rviz/show_mycar.rviz"/>
+	
+</launch>
