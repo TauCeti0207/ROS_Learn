@@ -5,4 +5,4 @@ Description: Description of learning_urdf_rviz_gazebo
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: urdf xacro gazebo_ros gazebo_ros_control gazebo_plugins

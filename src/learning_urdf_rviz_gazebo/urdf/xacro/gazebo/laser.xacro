@@ -1,0 +1,59 @@
+<!-- 定义一个名为my_sensors的机器人 -->
+<robot name="my_sensors" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- 雷达传感器定义 -->
+  <gazebo reference="laser">
+    <!-- 定义一个类型为ray的传感器，名称为rplidar -->
+    <sensor type="ray" name="rplidar">
+      <!-- 传感器的位置和姿态，这里设置为原点，无旋转 -->
+      <pose>0 0 0 0 0 0</pose>
+      <!-- 是否在Gazebo中可视化传感器数据，true表示可视化 -->
+      <visualize>true</visualize>
+      <!-- 传感器的更新频率，单位为Hz -->
+      <update_rate>5.5</update_rate>
+      <!-- 定义雷达的扫描参数 -->
+      <ray>
+        <!-- 扫描参数 -->
+        <scan>
+          <!-- 水平扫描参数 -->
+          <horizontal>
+            <!-- 扫描样本数量 -->
+            <samples>360</samples>
+            <!-- 扫描分辨率，单位为度 -->
+            <resolution>1</resolution>
+            <!-- 最小扫描角度，单位为度 -->
+            <min_angle>-3</min_angle>
+            <!-- 最大扫描角度，单位为度 -->
+            <max_angle>3</max_angle>
+          </horizontal>
+        </scan>
+        <!-- 雷达的测量范围参数 -->
+        <range>
+          <!-- 最小测量距离，单位为米 -->
+          <min>0.10</min>
+          <!-- 最大测量距离，单位为米 -->
+          <max>30.0</max>
+          <!-- 测量距离的分辨率，单位为米 -->
+          <resolution>0.01</resolution>
+        </range>
+        <!-- 噪声参数，用于模拟实际雷达的噪声 -->
+        <noise>
+          <!-- 噪声类型，这里使用高斯噪声 -->
+          <type>gaussian</type>
+          <!-- 噪声的均值 -->
+          <mean>0.0</mean>
+          <!-- 噪声的标准差 -->
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <!-- Gazebo插件，用于将雷达数据发布到ROS系统 -->
+      <plugin name="gazebo_rplidar" filename="libgazebo_ros_laser.so">
+        <!-- 发布的ROS话题名称 -->
+        <topicName>/scan</topicName>
+        <!-- 传感器在Gazebo中的参考坐标系名称 -->
+        <frameName>laser</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

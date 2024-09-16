@@ -10,6 +10,9 @@ project(learning_urdf_rviz_gazebo)
 find_package(catkin REQUIRED COMPONENTS
   urdf
   xacro
+  gazebo_ros
+  gazebo_ros_control
+  gazebo_plugins
 )
 
 ## System dependencies are found with CMake's conventions
@@ -104,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES learning_urdf_rviz_gazebo
-#  CATKIN_DEPENDS urdf xacro
+ CATKIN_DEPENDS urdf xacro gazebo_ros gazebo_ros_control gazebo_plugins
 #  DEPENDS system_lib
 )
 

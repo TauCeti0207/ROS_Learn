@@ -1,0 +1,46 @@
+<!-- 
+    创建一个机器人模型(盒状即可)，显示在 Gazebo 中 
+-->
+
+<robot name="mycar">
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <material name="yellow">
+                <color rgba="0.5 0.3 0.0 1" />
+            </material>
+        </visual>
+		<!-- 要在gazebo显示机器人 需要设置碰撞参数 collision -->
+        <collision>
+			<!-- 标准几何体直接复制 -->
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        </collision>
+		<!-- 连杆的惯性矩阵 -->
+        <inertial>
+			<!-- 定义了物体惯性框架的原点 -->
+            <origin xyz="0 0 0" />
+			<!-- 定义物体质量 -->
+            <mass value="6" />
+			<!-- 定义了物体的惯性张量 惯性张量是一个3x3的矩阵，描述了物体在各个方向上的转动惯量。
+			ixx 是绕 x 轴的转动惯量。
+			ixy 是绕 x 轴和 y 轴的交叉项。
+			ixz 是绕 x 轴和 z 轴的交叉项。
+			iyy 是绕 y 轴的转动惯量。
+			iyz 是绕 y 轴和 z 轴的交叉项。
+			izz 是绕 z 轴的转动惯量。-->
+			<!-- 惯性张量的值是对角线上的 1，其他交叉项为 0，这意味着物体是一个均匀分布的质量，且其转动惯量在 x、y 和 z 方向上相等。 -->
+            <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+        </inertial>
+    </link>
+	<!-- gazebo有自己的颜色设置 -->
+    <gazebo reference="base_link">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+</robot>

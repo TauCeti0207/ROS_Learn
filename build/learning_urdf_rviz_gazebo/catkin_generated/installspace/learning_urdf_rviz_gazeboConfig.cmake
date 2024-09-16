@@ -185,7 +185,7 @@ foreach(t ${learning_urdf_rviz_gazebo_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "urdf;xacro;gazebo_ros;gazebo_ros_control;gazebo_plugins")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
