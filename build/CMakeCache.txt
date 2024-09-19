@@ -400,6 +400,9 @@ actionlib_DIR:PATH=/opt/ros/noetic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
 
+//The directory containing a CMake configuration file for amcl.
+amcl_DIR:PATH=/opt/ros/noetic/share/amcl/cmake
+
 //The directory containing a CMake configuration file for angles.
 angles_DIR:PATH=/opt/ros/noetic/share/angles/cmake
 
@@ -439,6 +442,15 @@ controller_manager_msgs_DIR:PATH=/opt/ros/noetic/share/controller_manager_msgs/c
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/noetic/share/cv_bridge/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/noetic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/noetic/share/diagnostic_updater/cmake
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
 
@@ -474,6 +486,9 @@ genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for gmapping.
+gmapping_DIR:PATH=/opt/ros/noetic/share/gmapping/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/gtest/googlemock
@@ -546,6 +561,12 @@ learning_launch_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/learning_launch
 learning_launch_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/learning_launch
 
 //Value Computed by CMake
+learning_navigation_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/learning_navigation
+
+//Value Computed by CMake
+learning_navigation_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/learning_navigation
+
+//Value Computed by CMake
 learning_tf_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/learning_tf
 
 //Value Computed by CMake
@@ -559,6 +580,9 @@ learning_urdf_rviz_gazebo_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/learning
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for map_server.
+map_server_DIR:PATH=/opt/ros/noetic/share/map_server/cmake
 
 //Value Computed by CMake
 mbot_description_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/mbot_description
@@ -587,6 +611,12 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base.
+move_base_DIR:PATH=/opt/ros/noetic/share/move_base/cmake
+
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/noetic/share/move_base_msgs/cmake
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
 
@@ -598,6 +628,12 @@ pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for realtime_tools.
 realtime_tools_DIR:PATH=/opt/ros/noetic/share/realtime_tools/cmake
+
+//Value Computed by CMake
+robot_vision_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/robot_vision
+
+//Value Computed by CMake
+robot_vision_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/robot_vision
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
@@ -840,7 +876,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

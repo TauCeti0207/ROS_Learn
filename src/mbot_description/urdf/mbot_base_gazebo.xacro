@@ -13,6 +13,7 @@
     <xacro:property name="wheel_joint_y" value="0.19"/>
     <xacro:property name="wheel_joint_z" value="0.05"/>
 
+	<!-- 万向轮 -->
     <xacro:property name="caster_mass"    value="0.2" /> 
     <xacro:property name="caster_radius"  value="0.015"/> <!-- wheel_radius - ( base_length/2 - wheel_joint_z) -->
     <xacro:property name="caster_joint_x" value="0.18"/>
@@ -28,7 +29,7 @@
         <color rgba="0.75 0.75 0.75 1"/>
     </material>
     
-    <!-- Macro for inertia matrix -->
+    <!-- Macro for inertia matrix 惯性矩阵计算-->
     <xacro:macro name="sphere_inertial_matrix" params="m r">
         <inertial>
             <mass value="${m}" />
@@ -120,7 +121,8 @@
             <material>Gazebo/Black</material>
         </gazebo>
     </xacro:macro>
-
+	
+	<!-- 创建Robert -->
     <xacro:macro name="mbot_base_gazebo">
         <link name="base_footprint">
             <visual>
@@ -167,7 +169,7 @@
         <xacro:caster prefix="front" reflect="-1"/>
         <xacro:caster prefix="back"  reflect="1"/>
 
-        <!-- controller -->
+        <!-- controller gazebo控制器插件 -->
         <gazebo>
             <plugin name="differential_drive_controller" 
                     filename="libgazebo_ros_diff_drive.so">

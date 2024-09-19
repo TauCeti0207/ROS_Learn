@@ -3,6 +3,7 @@
 
     <xacro:include filename="$(find mbot_description)/urdf/mbot_base_gazebo.xacro" />
 
+	<!-- 调用宏 -->
     <xacro:mbot_base_gazebo/>
 
 </robot>
