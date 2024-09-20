@@ -689,6 +689,15 @@ std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 //The directory containing a CMake configuration file for std_srvs.
 std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
 
+//Value Computed by CMake
+tensorflow_object_detector_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/tensorflow_object_detector
+
+//Value Computed by CMake
+tensorflow_object_detector_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/tensorflow_object_detector
+
+//The directory containing a CMake configuration file for tensorflow_ros.
+tensorflow_ros_DIR:PATH=tensorflow_ros_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
 
@@ -718,6 +727,15 @@ turtlesim_DIR:PATH=/opt/ros/noetic/share/turtlesim/cmake
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
+//Value Computed by CMake
+vision_msgs_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/vision_msgs
+
+//The directory containing a CMake configuration file for vision_msgs.
+vision_msgs_DIR:PATH=/home/yzq0207/catkin_ws/devel/share/vision_msgs/cmake
+
+//Value Computed by CMake
+vision_msgs_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/vision_msgs
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
