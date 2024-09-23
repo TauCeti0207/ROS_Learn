@@ -70,6 +70,16 @@
 /home/yzq0207/catkin_ws/build/mbot_teleop/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/yzq0207/catkin_ws/build/mbot_teleop/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/yzq0207/catkin_ws/build/mbot_teleop/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/install/strip.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/install/local.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/install.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/list_install_components.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/rebuild_cache.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/edit_cache.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/test.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/voice_assistant.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/tts_subscribe.dir
+/home/yzq0207/catkin_ws/build/robot_voice/CMakeFiles/iat_publish.dir
 /home/yzq0207/catkin_ws/build/robot_vision/CMakeFiles/install/strip.dir
 /home/yzq0207/catkin_ws/build/robot_vision/CMakeFiles/install/local.dir
 /home/yzq0207/catkin_ws/build/robot_vision/CMakeFiles/install.dir

@@ -1,2 +1,2 @@
-learning_communication:learning_launch:learning_navigation:learning_tf:learning_urdf_rviz_gazebo:mbot_description:mbot_gazebo:mbot_teleop:robot_vision
+learning_communication:learning_launch:learning_navigation:learning_tf:learning_urdf_rviz_gazebo:mbot_description:mbot_gazebo:mbot_teleop:robot_vision:robot_voice
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/yzq0207/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yzq0207/catkin_ws/install -G Unix Makefiles

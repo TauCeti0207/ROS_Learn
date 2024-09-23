@@ -7,6 +7,7 @@
 subdirs("gtest")
 subdirs("learning_launch")
 subdirs("mbot_teleop")
+subdirs("robot_voice")
 subdirs("robot_vision")
 subdirs("learning_communication")
 subdirs("learning_tf")

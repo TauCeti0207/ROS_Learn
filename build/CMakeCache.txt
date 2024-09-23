@@ -635,6 +635,12 @@ robot_vision_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/robot_vision
 //Value Computed by CMake
 robot_vision_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/robot_vision
 
+//Value Computed by CMake
+robot_voice_BINARY_DIR:STATIC=/home/yzq0207/catkin_ws/build/robot_voice
+
+//Value Computed by CMake
+robot_voice_SOURCE_DIR:STATIC=/home/yzq0207/catkin_ws/src/robot_voice
+
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
 
@@ -894,7 +900,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
