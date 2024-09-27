@@ -435,6 +435,40 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='mrobot'>
+        <pose frame=''>-0.000122 0.000118 0 0 0 -1.4e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='back_caster_link'>
+          <pose frame=''>0.179878 0.000116 0.015 7.5e-05 -0.007761 -1.4e-05</pose>
+          <velocity>-3e-06 -1e-06 0 -0.000215 -0.000231 0</velocity>
+          <acceleration>0 4e-06 0 0.000614 2.5e-05 0</acceleration>
+          <wrench>0 2e-06 0 0 -0 0</wrench>
+        </link>
+        <link name='base_footprint'>
+          <pose frame=''>-0.000122 0.000118 0 0 0 -1.4e-05</pose>
+          <velocity>-3e-06 0 0 -1e-06 0 0</velocity>
+          <acceleration>0 0 1e-06 3e-06 -0 0</acceleration>
+          <wrench>7e-06 -5e-06 2.2e-05 0 -0 0</wrench>
+        </link>
+        <link name='front_caster_link'>
+          <pose frame=''>-0.180122 0.000121 0.015 7.5e-05 -0.008972 -1.4e-05</pose>
+          <velocity>-3e-06 -1e-06 0 -0.000215 -0.000229 0</velocity>
+          <acceleration>0 4e-06 0 0.000613 2.2e-05 0</acceleration>
+          <wrench>0 2e-06 0 0 -0 0</wrench>
+        </link>
+        <link name='left_wheel_link'>
+          <pose frame=''>-0.000124 -0.189882 0.06 1.1e-05 -0.00189 -1.4e-05</pose>
+          <velocity>-3e-06 0 0 -3.3e-05 -5.6e-05 -0</velocity>
+          <acceleration>0 1e-06 1e-06 9.8e-05 5e-06 0</acceleration>
+          <wrench>1e-06 3e-06 2e-06 0 -0 0</wrench>
+        </link>
+        <link name='right_wheel_link'>
+          <pose frame=''>-0.000119 0.190117 0.06 -2.5e-05 -0.001903 -1.4e-05</pose>
+          <velocity>-3e-06 1e-06 -1e-06 7.1e-05 -5.6e-05 0</velocity>
+          <acceleration>0 -4e-06 2e-06 -0.000207 6e-06 0</acceleration>
+          <wrench>1e-06 -7e-06 4e-06 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='room'>
         <pose frame=''>-0.420652 -1.74565 0 0 -0 0</pose>
         <scale>1 1 1</scale>

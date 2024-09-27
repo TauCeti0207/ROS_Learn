@@ -17,4 +17,3 @@
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mbot_description)/config/mbot.rviz" required="true" />
 
 </launch>
-

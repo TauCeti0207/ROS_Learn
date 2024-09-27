@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("learning_launch")
+subdirs("mbot_navigation")
 subdirs("mbot_teleop")
 subdirs("robot_voice")
 subdirs("robot_vision")
