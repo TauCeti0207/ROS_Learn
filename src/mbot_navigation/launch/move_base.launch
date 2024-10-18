@@ -1,13 +1,20 @@
 <launch>
-
+  <!-- 启动一个包含move_base节点的launch文件 -->
+  
+  <!-- 配置并启动move_base节点 -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+    <!-- 指定使用的本地规划器为dwa_local_planner -->
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
 
+    <!-- 加载全局成本地图和本地成本地图的公共参数 -->
     <rosparam file="$(find mbot_navigation)/config/mbot/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find mbot_navigation)/config/mbot/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    
+    <!-- 分别加载本地和全局成本地图的特定参数 -->
     <rosparam file="$(find mbot_navigation)/config/mbot/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find mbot_navigation)/config/mbot/global_costmap_params.yaml" command="load" />
 
+    <!-- 加载move_base和dwa_local_planner的特定参数 -->
     <rosparam file="$(find mbot_navigation)/config/mbot/move_base_params.yaml" command="load" />
     <rosparam file="$(find mbot_navigation)/config/mbot/dwa_local_planner_params.yaml" command="load" />
   </node>

@@ -10,6 +10,8 @@
 	"C_Cpp.intelliSenseEngine": "Tag Parser",
 	"cmake.ignoreCMakeListsMissing": true,
 	"files.associations": {
-		"cmath": "cpp"
+		"cmath": "cpp",
+		"unordered_map": "cpp",
+		"unordered_set": "cpp"
 	}
 }

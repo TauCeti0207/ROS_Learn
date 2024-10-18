@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/yzq0207/catkin_ws/devel/lib/learning_tf/demo06_new_turtle"
   "/home/yzq0207/catkin_ws/devel/lib/learning_tf/demo06_new_turtle.pdb"
   "CMakeFiles/demo06_new_turtle.dir/src/demo06_new_turtle.cpp.o"
+  "CMakeFiles/demo06_new_turtle.dir/src/demo06_new_turtle.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,12 +1,20 @@
 <launch>
+  <!-- 启动描述文件的根元素 -->
 
-  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+    <!-- 定义一个名为usb_cam的节点，属于usb_cam包，类型为usb_cam_node，输出到屏幕 -->
+    <!-- 以下参数配置usb摄像头的各种属性 -->
     <param name="video_device" value="/dev/video0" />
+    <!-- 指定视频设备为/dev/video0 -->
     <param name="image_width" value="640" />
+    <!-- 设置图像宽度为640像素 -->
     <param name="image_height" value="480" />
+    <!-- 设置图像高度为480像素 -->
     <param name="pixel_format" value="yuyv" />
+    <!-- 指定像素格式为YUYV -->
     <param name="camera_frame_id" value="usb_cam" />
+    <!-- 设置相机参考帧ID为usb_cam -->
     <param name="io_method" value="mmap"/>
+    <!-- 指定I/O方法为内存映射（mmap） -->
   </node>
-
 </launch>

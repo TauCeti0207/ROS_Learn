@@ -1,42 +1,75 @@
 <launch>
-    <arg name="scan_topic" default="scan"/>
-    <arg name="initial_pose_x" default="0.0"/>
-    <arg name="initial_pose_y" default="0.0"/>
-    <arg name="initial_pose_a" default="0.0"/>
+  <!-- 定义参数 -->
+  <arg name="scan_topic" default="scan"/> <!-- 激光雷达数据的话题 -->
+  <arg name="initial_pose_x" default="0.0"/> <!-- 初始位置的x坐标 -->
+  <arg name="initial_pose_y" default="0.0"/> <!-- 初始位置的y坐标 -->
+  <arg name="initial_pose_a" default="0.0"/> <!-- 初始位置的朝向 -->
 
-    <node pkg="amcl" type="amcl" name="amcl" clear_params="true">
-        <param name="min_particles"             value="500"/>
-        <param name="max_particles"             value="3000"/>
-        <param name="kld_err"                   value="0.02"/>
-        <param name="update_min_d"              value="0.20"/>
-        <param name="update_min_a"              value="0.20"/>
-        <param name="resample_interval"         value="1"/>
-        <param name="transform_tolerance"       value="0.5"/>
-        <param name="recovery_alpha_slow"       value="0.00"/>
-        <param name="recovery_alpha_fast"       value="0.00"/>
-        <param name="initial_pose_x"            value="$(arg initial_pose_x)"/>
-        <param name="initial_pose_y"            value="$(arg initial_pose_y)"/>
-        <param name="initial_pose_a"            value="$(arg initial_pose_a)"/>
-        <param name="gui_publish_rate"          value="50.0"/>
+  <!-- 运行amcl节点 -->
+  <node pkg="amcl" type="amcl" name="amcl" clear_params="true">
+    <!-- 设置粒子滤波器的最小粒子数 -->
+    <param name="min_particles" value="500"/>
+    <!-- 设置粒子滤波器的最大粒子数 -->
+    <param name="max_particles" value="3000"/>
+    <!-- 设置KLD采样误差 -->
+    <param name="kld_err" value="0.02"/>
+    <!-- 设置最小距离更新阈值 -->
+    <param name="update_min_d" value="0.20"/>
+    <!-- 设置最小角度更新阈值 -->
+    <param name="update_min_a" value="0.20"/>
+    <!-- 设置重采样间隔 -->
+    <param name="resample_interval" value="1"/>
+    <!-- 设置变换容忍度 -->
+    <param name="transform_tolerance" value="0.5"/>
+    <!-- 设置慢速恢复因子 -->
+    <param name="recovery_alpha_slow" value="0.00"/>
+    <!-- 设置快速恢复因子 -->
+    <param name="recovery_alpha_fast" value="0.00"/>
+    <!-- 设置初始位置的x坐标 -->
+    <param name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <!-- 设置初始位置的y坐标 -->
+    <param name="initial_pose_y" value="$(arg initial_pose_y)"/>
+    <!-- 设置初始位置的朝向 -->
+    <param name="initial_pose_a" value="$(arg initial_pose_a)"/>
+    <!-- 设置GUI发布速率 -->
+    <param name="gui_publish_rate" value="50.0"/>
 
-        <remap from="scan"                      to="$(arg scan_topic)"/>
-        <param name="laser_max_range"           value="3.5"/>
-        <param name="laser_max_beams"           value="180"/>
-        <param name="laser_z_hit"               value="0.5"/>
-        <param name="laser_z_short"             value="0.05"/>
-        <param name="laser_z_max"               value="0.05"/>
-        <param name="laser_z_rand"              value="0.5"/>
-        <param name="laser_sigma_hit"           value="0.2"/>
-        <param name="laser_lambda_short"        value="0.1"/>
-        <param name="laser_likelihood_max_dist" value="2.0"/>
-        <param name="laser_model_type"          value="likelihood_field"/>
+    <!-- 重映射激光雷达数据的话题 -->
+    <remap from="scan" to="$(arg scan_topic)"/>
+    <!-- 设置激光雷达的最大测量范围 -->
+    <param name="laser_max_range" value="3.5"/>
+    <!-- 设置激光雷达的最大扫描线数 -->
+    <param name="laser_max_beams" value="180"/>
+    <!-- 设置激光雷达的z轴命中概率 -->
+    <param name="laser_z_hit" value="0.5"/>
+    <!-- 设置激光雷达的z轴短距离概率 -->
+    <param name="laser_z_short" value="0.05"/>
+    <!-- 设置激光雷达的z轴最大距离概率 -->
+    <param name="laser_z_max" value="0.05"/>
+    <!-- 设置激光雷达的z轴随机概率 -->
+    <param name="laser_z_rand" value="0.5"/>
+    <!-- 设置激光雷达的命中概率标准差 -->
+    <param name="laser_sigma_hit" value="0.2"/>
+    <!-- 设置激光雷达的短距离概率衰减因子 -->
+    <param name="laser_lambda_short" value="0.1"/>
+    <!-- 设置激光雷达的最大似然距离 -->
+    <param name="laser_likelihood_max_dist" value="2.0"/>
+    <!-- 设置激光雷达模型类型 -->
+    <param name="laser_model_type" value="likelihood_field"/>
 
-        <param name="odom_model_type"           value="diff"/>
-        <param name="odom_alpha1"               value="0.1"/>
-        <param name="odom_alpha2"               value="0.1"/>
-        <param name="odom_alpha3"               value="0.1"/>
-        <param name="odom_alpha4"               value="0.1"/>
-        <param name="odom_frame_id"             value="odom"/>
-        <param name="base_frame_id"             value="base_footprint"/>
-    </node>
+    <!-- 设置里程计模型类型 -->
+    <param name="odom_model_type" value="diff"/>
+    <!-- 设置里程计的alpha1参数 -->
+    <param name="odom_alpha1" value="0.1"/>
+    <!-- 设置里程计的alpha2参数 -->
+    <param name="odom_alpha2" value="0.1"/>
+    <!-- 设置里程计的alpha3参数 -->
+    <param name="odom_alpha3" value="0.1"/>
+    <!-- 设置里程计的alpha4参数 -->
+    <param name="odom_alpha4" value="0.1"/>
+    <!-- 设置里程计的参考坐标系 -->
+    <param name="odom_frame_id" value="odom"/>
+    <!-- 设置机器人基座的参考坐标系 -->
+    <param name="base_frame_id" value="base_footprint"/>
+  </node>
 </launch>

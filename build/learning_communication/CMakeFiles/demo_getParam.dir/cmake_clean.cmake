@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/yzq0207/catkin_ws/devel/lib/learning_communication/demo_getParam"
   "/home/yzq0207/catkin_ws/devel/lib/learning_communication/demo_getParam.pdb"
   "CMakeFiles/demo_getParam.dir/src/demo_getParam.cpp.o"
+  "CMakeFiles/demo_getParam.dir/src/demo_getParam.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
