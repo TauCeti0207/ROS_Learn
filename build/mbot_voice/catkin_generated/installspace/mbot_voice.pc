@@ -1,8 +1,0 @@
-prefix=/home/yzq0207/catkin_ws/install
-
-Name: mbot_voice
-Description: Description of mbot_voice
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

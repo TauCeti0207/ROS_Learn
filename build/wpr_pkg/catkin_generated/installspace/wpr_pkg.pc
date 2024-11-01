@@ -1,0 +1,8 @@
+prefix=/home/yzq0207/catkin_ws/install
+
+Name: wpr_pkg
+Description: Description of wpr_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

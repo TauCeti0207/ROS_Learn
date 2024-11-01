@@ -1,0 +1,17 @@
+<launch>
+
+	<!-- 载入 机器人 和 RoboCup@Home 的仿真场景 -->
+	<include file="$(find wpr_simulation)/launch/wpb_stage_robocup.launch"/>
+
+	<!-- Gmapping -->
+	<node pkg="gmapping" type="slam_gmapping" name="slam_gmapping"/>
+
+	<!-- Rviz -->
+	<arg name="rvizconfig" default="$(find wpr_pkg)/rviz/slam.rviz" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+	<!-- 键盘控制 -->
+	<node name="mbot_teleop" pkg="mbot_teleop" type="mbot_teleop.py" output="screen"/>
+	<!-- <node name="keyboard_vel_ctrl" pkg="wpr_simulation" type="keyboard_vel_ctrl" output="screen"/> -->
+
+</launch>

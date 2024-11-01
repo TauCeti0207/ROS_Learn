@@ -1,0 +1,40 @@
+<launch>
+	<!-- 载入 机器人 和 RoboCup@Home 的仿真场景 -->
+	<include file="$(find wpr_simulation)/launch/wpb_stage_robocup.launch"/>
+	<!--- Run move_base -->
+	<node pkg="move_base" type="move_base" name="move_base">
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/costmap_common_params.yaml" command="load" ns="global_costmap" />
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/costmap_common_params.yaml" command="load" ns="local_costmap" />
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/global_costmap_params.yaml" command="load" />
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/local_costmap_params.yaml" command="load" />
+		<param name="base_global_planner" value="global_planner/GlobalPlanner" />
+
+		<!-- wpbh规划器 -->
+		<param name="base_local_planner" value="wpbh_local_planner/WpbhLocalPlanner" />
+		<!-- dwa规划器 -->
+		<!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/dwa_local_planner_params.yaml" command="load" /> -->
+		<!-- teb规划器 -->
+		<!-- <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+		<rosparam file="$(find wpb_home_tutorials)/nav_lidar/teb_local_planner_params.yaml" command="load" /> -->
+
+	</node>
+
+	<!-- Run map server -->
+	<node pkg="map_server" type="map_server" name="map_server" args="$(find wpr_pkg)/maps/map.yaml"/>
+
+	<!--- Run AMCL -->
+	<node pkg="amcl" type="amcl" name="amcl"/>
+
+	<!--- Run rviz -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find wpr_pkg)/rviz/map_tool.rviz"/>
+
+	<node pkg="waterplus_map_tools" type="wp_navi_server" name="wp_navi_server" output="screen"/>
+
+	<node pkg="waterplus_map_tools" type="wp_manager" name="wp_manager" output="screen"/>
+
+	<!-- 测试航点 -->
+	<!-- <node pkg = "wpr_simulation" type="demo_map_tool" name = "demo_map_tool" output="screen"/> -->
+	<!-- <node pkg = "wpr_pkg" type="wp_node" name = "wp_node" output="screen"/> -->
+
+</launch>
